@@ -17,6 +17,39 @@ This is a backend system built using **FastAPI** and **SQLAlchemy** for managing
   - Retrieve a specific doctor by their ID.
   - Update doctor details.
   - Delete doctor records.
+  
+## Endpoints
 
-## Project Structure
+### Patients
 
+- `POST /Patients/` - Add a new patient
+- `GET /Patients/` - Retrieve all patients
+- `GET /Patients/{id}` - Retrieve a specific patient by ID
+- `PUT /Patients/{id}` - Update a patient record by ID
+- `DELETE /Patients/{id}` - Delete a patient record by ID
+
+### Doctors
+
+- `POST /Doctors/` - Add a new doctor
+- `GET /Doctors/` - Retrieve all doctors
+- `GET /Doctors/{id}` - Retrieve a specific doctor by ID
+- `PUT /Doctors/{id}` - Update a doctor record by ID
+- `DELETE /Doctors/{id}` - Delete a doctor record by ID
+
+## Installation and Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/ChaitanyaKanchi/FastAPI_Project
+   cd FastAPI_Project
+
+2. Setup Environment
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+  
+3. Run the Application
+   ```bash
+   uvicorn app:app --reload
